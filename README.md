@@ -50,7 +50,7 @@ In calculateAccuracy, I compare the predicted vowels with the true vowels and co
 
 ## Part 3
 
-### Five different variations of the --k option, holding the --r option at its default:
+#### Five different variations of the --k option, holding the --r option at its default:
 
 k = 100: 0.3660601122578309
 k = 200 (default): 0.459985515118595
@@ -58,7 +58,7 @@ k = 300: 0.4138602208944414
 k = 400: 0.14257046291266823
 k = 500: 0.35804816223067176
 
-### Five different variations of the --r option, holding the --k option at its default:
+#### Five different variations of the --r option, holding the --k option at its default:
 
 r = 50:  0.2851258374072062
 r = 100 (default):  0.5285623755205504 (saved as 'best_model.pt')

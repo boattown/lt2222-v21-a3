@@ -53,17 +53,25 @@ In calculateAccuracy, I compare the predicted vowels with the true vowels and co
 #### Five different variations of the --k option, holding the --r option at its default:
 
 k = 100: 0.3660601122578309
+
 k = 200 (default): 0.459985515118595
+
 k = 300: 0.4138602208944414
+
 k = 400: 0.14257046291266823
+
 k = 500: 0.35804816223067176
 
 #### Five different variations of the --r option, holding the --k option at its default:
 
 r = 50:  0.2851258374072062
+
 r = 100 (default):  0.5285623755205504 (saved as 'best_model.pt')
+
 r = 200:  0.17611201641619892
+
 r = 300:  0.31103265133683383
+
 r = 400:  0.15477699318003502
 
 It is hard to draw any conclusions since the accuracy differes quite a lot between different models.
@@ -87,17 +95,26 @@ I repeated the experiment and documented the perplexity scores below.
 #### Five different variations of the --k option, holding the --r option at its default:
 
 k = 100: 63326
+
 k = 200 (default): 55171
+
 k = 300: 50464
+
 k = 400: 47578
+
 k = 500: 46247
+
 
 #### Five different variations of the --r option, holding the --k option at its default:
 
 r = 50: 77573
+
 r = 100 (default): 55171
+
 r = 200: 40394
+
 r = 300: 37139
+
 r = 400: 35708
 
 ## Other notes

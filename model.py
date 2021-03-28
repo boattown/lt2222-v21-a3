@@ -15,6 +15,7 @@ class VowelModel(nn.Module):
         self.softmax = nn.LogSoftmax(dim=1)
 
         self.vocab = vocab
+        self.loss = 0
 
     def forward(self, x):
         x = self.lin1(x)
@@ -38,7 +39,6 @@ def __shuffler__(X, y):
         classdf = rearrangedf['class']
 
         yield torch.Tensor(featuredf.to_numpy()), torch.LongTensor(classdf.to_numpy())
-        
 
 def train(X, y, vocab, hiddensize, epochs=100):
     inputsize = X.shape[1]
@@ -60,6 +60,8 @@ def train(X, y, vocab, hiddensize, epochs=100):
         optimizer.step()
 
         print("In epoch {}, the loss was {}.".format(epoch, loss))
+
+    model.loss = loss
 
     return model
 
